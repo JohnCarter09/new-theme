@@ -44,6 +44,7 @@ p{
 	line-height:26px;
 	font-size:14px;
 	margin:8px 0;
+	color: #777;
 }
 
 h3{
@@ -73,7 +74,7 @@ ul.navbar-nav li a{
 	font-size:14px;
 	text-transform:uppercase;
 	font-weight:400;
-	color:#414141 !important;
+	color:#00bcd4 !important;
 }
 
 .is-sticky .main-menu{
@@ -87,9 +88,16 @@ ul.navbar-nav li a{
 	transition:0.4s;
 	padding:15px 0;
 }
+.is-sticky .main-menu ul.navbar-nav li a:hover {
+	color: #fff;
+	background-origin: #fff;
+	display: block;
+}
 
-.is-sticky .main-menu ul.navbar-nav li a{
+.is-sticky .main-menu ul.navbar-nav li a:hover{
 	color:#9b9b9b !important;
+	color: #fff;
+	background-origin: #444;
 }
 
 /*Top Navbar*/
@@ -153,7 +161,7 @@ ul.navbar-nav li a{
 
 /*Awards*/
 #awards{
-	background: #5553;
+	background:#f5f5f5;
 }
 
 .award-win{
@@ -208,12 +216,12 @@ ul.navbar-nav li a{
 }
 
 #features{
-	background:#c6c6c6;
+	background:#c9c9c9;
 }
 
 .feature-icon i{
 	font-size:50px;
-	color:#a1a1a1;
+	color:#00bcd4;
 }
 
 .feature-text h4{
@@ -280,21 +288,6 @@ ul.navbar-nav li a{
   display: block;
   position: relative;
   width: inherit;
-}
-
-.thumb-rollover{
-	position:absolute;
-	top:0;
-	left:0;
-	height:100%;
-	width:100%;
-	box-sizing:border-box;
-	background:#00bcd4;
-	opacity:0.9;
-	text-align:center;
-	color:#fff;
-	display:none;
-	transition:0.2s;
 }
 
 .project-title{
@@ -523,6 +516,24 @@ ul.projects li {
   text-transform: uppercase;
   width: 100%;
 }
+
+.btn.buton-primary{
+	margin-top: 16px;
+	margin-left: 15px;
+	background: #00bcd4;
+	border-radius: 3px;
+	border-color: none;
+	color: #000;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	width: 25em;
+	margin-bottom: 15px;
+}
+.btn.buton-primary:hover{
+	background: #278d99;
+	border-radius: 3px;
+	border-color: #fff;
+	color: #fff;
 
 /*Footer*/
 
