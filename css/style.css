@@ -519,19 +519,18 @@ ul.projects li {
 
 .btn.buton-primary{
 	margin-top: 16px;
-	margin-left: 15px;
+	margin-left: 1px;
 	background: #00bcd4;
-	border-radius: 3px;
+	border-radius: 55px;
 	border-color: none;
-	color: #000;
+	color: #fff;
 	padding-top: 15px;
 	padding-bottom: 15px;
-	width: 25em;
 	margin-bottom: 15px;
 }
 .btn.buton-primary:hover{
 	background: #278d99;
-	border-radius: 3px;
+	border-radius: 55px;
 	border-color: #fff;
 	color: #fff;
 
@@ -1082,4 +1081,7 @@ form#commentform textarea {
 
 #contact-us{
 	padding:70px 0;
+}
+.hover-color:hover{
+color: #fff;
 }
