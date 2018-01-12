@@ -56,6 +56,7 @@
 									<li class="hover-color"><a href="#about">{ About };</a></li>
 									<li class="hover-color"><a href="#features">{ Skills };</a></li>
 									<li class="hover-color"><a href="#feature-work">{ Portfolio };</a></li>
+									<li class="hover-color"><a href="wire-frames.html">{ Wire-Frames };</a></li>
 									<li class="hover-color"><a href="#contact-us">{ Contact };</a></li>
 								</ul>
 							</div>
@@ -105,7 +106,7 @@
 					<div class="about-text wow fadeInRight">
 						<div class="col-md-8">
 							<strong><p>For more than a 5 years I've been building quietly on the principles that got me started – simplicity, collaborative thinking, hard work and having fun.</strong>
-							<p>Origionally from Arizona, I moved to Colorado in 2009. I was stationed in Colorado Springs at Fort Carson where I was enlisted in the ARMY. Honorbly discharged in 2012 I enrolled in an International Business Program at CU where I successfully finished my bachelor's degree in 2 1/2 years. While in school I found a love for photography. What started as a hobby, turned into more, I was shooting weddings every other weekend and running my own professional photography business. College is when I really found my love for coding, and my passion for user centered design.</p><hr><p>I started taking HTML / CSS & Bootstrap courses on Udemy.com and Treehouse while in school, I was able to quickly grasp the basicis of responsive web design and devlopment. Having an eye for beautiful asthetic from my photography background and learning the fundamentals for beautiful webdesign was a great pairing. Fast forward a few years, I am living and working in Denver, CO as a UI/UX Engineer and Front-End Developer. Currently working for a small start up I wear multiple hats in the UX realm, from user personas and UI prototyping to responsive front-end development. I am very passionate about creating effective user experiences that inspire, educate and perform. </p>
+							<p>Origionally from Arizona, I moved to Colorado in 2009. I was stationed in Colorado Springs at Fort Carson where I was enlisted in the ARMY. Honorbly discharged in 2012 I enrolled in an International Business Program at CU where I successfully finished my bachelor's degree in 2 1/2 years. While in school I found a love for photography. What started as a hobby, turned into more, I was shooting weddings every other weekend and running my own professional photography business. College is when I really found my love for coding, and my passion for user centered design.</p><hr><p>I started taking HTML / CSS & Bootstrap courses on Udemy.com and Treehouse while in school, I was able to quickly grasp the basicis of responsive web design and devlopment. Having an eye for beautiful asthetic from my photography background and learning the fundamentals for beautiful webdesign was a great pairing. Fast forward a few years, I am living and working in Denver, CO as a UI/UX Engineer and Front-End Developer. Currently working for a small start up where I wear multiple hats in the UX realm, from user personas, site-maps, high fidelity wireframes & UI prototyping, to responsive front-end development. I am very passionate about creating effective user experiences that not only inspire, but educate and perform. </p>
 						</div>		
 					</div>
 				</div>
@@ -262,7 +263,7 @@
 						
 						<div class="thumb-rollover">
 							<div class="title">
-								<a href="https://crossfitomnia.com/" class="btn buton-primary" target="about_blank"><h6>Crossfit Omnia</h6></a>
+								<a href="https://www.crossfitomnia.com/" class="btn buton-primary" target="about_blank"><h6>Crossfit Omnia</h6></a>
 							</div>
 						</div>
 						
@@ -274,7 +275,7 @@
 						</a>
 						<div class="thumb-rollover">
 							<div class="title">
-								<a href="https://johncarterimages.com" class="btn buton-primary" target="about_blank"><h6>Historically Modern Designs</h6></a>
+								<a href="https://johncarterimages.com" class="btn buton-primary" target="about_blank"><h6>Historically Modern Design</h6></a>
 							</div>
 						</div>
 					</div>
@@ -518,6 +519,34 @@
             e.src='https://www.google-analytics.com/analytics.js';
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+        <script type="text/javascript">
+        	$(document).ready(function(){
+
+    $(".filter-button").click(function(){
+        var value = $(this).attr('data-filter');
+        
+        if(value == "all")
+        {
+            //$('.filter').removeClass('hidden');
+            $('.filter').show('1000');
+        }
+        else
+        {
+//            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
+//            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+            $(".filter").not('.'+value).hide('3000');
+            $('.filter').filter('.'+value).show('3000');
+            
+        }
+    });
+    
+    if ($(".filter-button").removeClass("active")) {
+$(this).removeClass("active");
+}
+$(this).addClass("active");
+
+});
         </script>
     </body>
 </html>

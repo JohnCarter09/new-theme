@@ -27,6 +27,7 @@ a:hover{
 
 img{
 	max-width:100%;
+	margin-bottom: 25px;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -1084,4 +1085,9 @@ form#commentform textarea {
 }
 .hover-color:hover{
 color: #fff;
+}
+
+/*Wire-Frame-Galery*/
+.gallery-title{
+	padding: 50px;
 }
