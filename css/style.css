@@ -46,6 +46,7 @@ p{
 	font-size:14px;
 	margin:8px 0;
 	color: #777;
+	margin-left:15px;
 }
 
 h3{
@@ -64,9 +65,12 @@ icon color: #a1a1a1;
 
 
 /*Top Navbar*/
+.icon-bar{
+	color: #000;
+}
 .navbar-inverse {
   background-color: #fff;
-  border-color: transparent;
+  border-color: #000;
   padding:10px 0;
 }
 
